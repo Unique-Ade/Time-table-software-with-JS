@@ -12,7 +12,7 @@
 <body>
     <!-- <div class="container-1"> -->
     <nav class="nav">
-        <a href="#" class="Logo">MTM</a>
+        <a href="#" class="Logo">TableCube</a>
         <ul class="nav-items">
             <li class="nav-item">
                 <a href="#" class="nav-item">Home</a>
@@ -21,33 +21,32 @@
                 <a href="#" class="nav-item">Contact</a>
             </li>
         </ul>
-        <button class="login-btn">Login</button>
+        <a href="#">
+            <button class="login-btn" type="button"
+                onclick="document.querySelector('#schoolInfo').style.display = 'block'">Create my time-table</button>
+        </a>
     </nav>
-
+    <div class="box"></div>
     <form id="schoolInfo">
-
-        Country
-        <select name="countries" id="countries">
+        <!-- ctb - create time table header text -->
+        <h2 class="ctb-header">Create New Table</h2>
+        <select name="countries" id="countries" class="ctb-inputs">
             <option value="Nigeria">Nigeria</option>
             <option value="Ghana">Ghana</option>
             <option value="South Africa">South Africa</option>
             <option value="America">America</option>
             <option value="United Kingdom">United Kingdom</option>
         </select>
-
-
         <div>
-            School Name<input type="text" placeholder="School name" name="schoolName" class="sch-name schoolName"></label>
+            <input type="text" placeholder="School name" name="schoolName" class="sch-name schoolName"></label>
         </div>
         <div>
-            School Address<input type="text" class="sch-name sch-address" name="schoolAddress"
+            <input type="text" class="sch-name sch-address" name="schoolAddress"
                 placeholder="Type address here"></label>
         </div>
         <div>
-            Input Class<input type="text" class="sch-name input-class" name="inputClass" placeholder="Type class here"></label>
+            <input type="text" class="sch-name input-class" name="inputClass" placeholder="Type class here"></label>
         </div>
-
-        Academic Session
         <select name="session" id="session">
             <option value="Academic Session: 2023/2024">Academic Session: 2023/2024</option>
             <option value="Academic Session: 2024/2025">Academic Session: 2024/2025</option>
@@ -62,7 +61,7 @@
     <br>
     <br>
 
-    <a href="editing-page.html">Edit your Time-table</a>
+    <!-- <a href="editing-page.html">Edit your Time-table</a> -->
     <script src="index.js"></script>
 </body>
 

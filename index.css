@@ -1,35 +1,61 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
     font-size: 20px;
-    font-family: cursive;
+    font-family: myFirstFont;
     list-style: none;
 }
 
-body {
-    background-size: 1000px;
-}
+/* body {
+    
+} */
 
 #schoolInfo {
-    border: 3px solid #59ce72;
-    width: 650px;
-    height: 350px;
+    border: 3px solid gainsboro;
+    width: 350px;
+    height: fit-content;
     border-radius: 20px;
-    margin-top: 140px;
-    margin-left: 80px;
-    background-color: white;
-    padding: 50px;
-    filter: drop-shadow(20px 20px 10px gray);
+    margin: auto;
+    background-color: rgb(227, 220, 220);
+    padding: 30px;
+    /* filter: drop-shadow(20px 20px 10px gray); */
+    display: none;
+    background: transparent;
+}
+
+.ctb-header {
+    font-size: 30px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
 }
 
 .submit {
-    background-color: #59ce72;
-    color: white;
-    margin-left: 170px;
-    width: 300px;
+    /* background-color: #59ce72; */
+    background-color: transparent;
+    color: black;
+    margin: auto;
+    width: 365px;
     height: 40px;
+    /* outline: none; */
+    padding: 10px 24px;
     border-radius: 10px;
-    outline: none;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #20948B;
+}
+
+.submit:hover {
+    background-color: #98bdaa;
+    border: 1px solid black;
+    color: black;
 }
 
 .submit-2 {
@@ -44,7 +70,7 @@ body {
     margin-bottom: 12px;
 }
 
-.delete{
+.delete {
     background-color: red;
     color: white;
     margin-left: 150px;
@@ -68,46 +94,51 @@ body {
 
 }
 
-select {
+/* select {
     margin-left: 140px;
     margin-bottom: 30px;
     border: 2px solid;
-}
+} */
 
 #countries {
-    margin-left: 117px;
+    margin: auto;
     border-radius: 10px;
-}
-#session{
-    margin-left: 25px;
-    border-radius: 10px;
+    padding: 10px;
+    width: 365px;
+    margin: 10px 0px;
 }
 
-input {
+#session {
+    margin: auto;
     border-radius: 10px;
-    width: 400px;
-    border: 2px solid;
-
+    padding: 10px;
+    width: 365px;
+    margin: 20px 0px;
 }
 
 .sch-name {
-    margin-left: 75px;
-    padding-left: 15px;
-    margin-bottom: 30px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 340px;
+    margin: 10px 0px;
+    outline: none;
 }
 
 .sch-address {
-    margin-left: 50px;
-    margin-bottom: 30px;
-    width: 413px;
-    padding-left: 10px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 340px;
+    margin: 10px 0px;
 }
 
 .input-class {
-    margin-left: 90px;
-    width: 420px;
-    margin-bottom: 30px;
-    padding-left: 10px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    width: 340px;
+    margin: 10px 0px;
 }
 
 .container-4 {
@@ -115,11 +146,16 @@ input {
     height: 1000px;
     margin: 0px auto;
     border: 2px solid black;
-    border-radius: 500px;
+    border-radius: 500px
 }
 
 a {
     text-decoration: none;
+}
+
+a:hover {
+    /* color: aliceblue; */
+    color: #f3f3f3
 }
 
 .temp {
@@ -280,24 +316,41 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0px 150px;
+    padding: 0px 20px;
     text-decoration: none;
+    background-color: #20948B;
+    margin-bottom: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
 }
 
 .Logo {
     font-size: 45px;
 }
+
 .nav-item {
     column-gap: 15px;
     list-style: none;
     padding: 10px;
 }
+
 .login-btn {
-    display: block;
     margin: 0px auto;
-    padding: 6px 24px;
-    background: transparent;
+    padding: 10px 24px;
     background-color: 2px solid white;
-    border-radius: 6px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
     cursor: pointer;
+    border: none;
+}
+
+.login-btn:hover {
+    color: #31473A;
+    background-color: #b8d5ce;
 }
