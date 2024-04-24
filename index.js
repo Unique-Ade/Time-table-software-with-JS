@@ -8,5 +8,5 @@ submitForm.addEventListener('submit', function (e) {
        localStorage.setItem("Data", JSON.stringify(formData)); //can only store string Data in local storage
          
        
-       window.location.href = 'Transform-page.html';
+       window.location.href = 'selectSubjects.html';
 })

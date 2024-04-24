@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <script src="handleSubmit.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,27 +27,36 @@
         </a>
     </nav>
     <div class="box"></div>
+    <div class="content" style="display: flex; align-items: center;"  >
+        <!-- <div>
+            <p class="index-writeUp" >Experience the game Changer</p>
+            <p class="index-writeUp" style="font-size: 40px;">Create school Time-tables with our easy to use free time-table maker</p>
+        </div>
+         -->
+       
+    </div>
+    
     <form id="schoolInfo">
         <!-- ctb - create time table header text -->
         <h2 class="ctb-header">Create New Table</h2>
-        <select name="countries" id="countries" class="ctb-inputs">
+        <!-- <select name="countries" id="countries" class="ctb-inputs" required>
             <option value="Nigeria">Nigeria</option>
             <option value="Ghana">Ghana</option>
             <option value="South Africa">South Africa</option>
             <option value="America">America</option>
             <option value="United Kingdom">United Kingdom</option>
-        </select>
+        </select> -->
         <div>
-            <input type="text" placeholder="School name" name="schoolName" class="sch-name schoolName"></label>
+            <input type="text" required placeholder="School name" name="schoolName" class="sch-name schoolName"></label>
         </div>
         <div>
             <input type="text" class="sch-name sch-address" name="schoolAddress"
-                placeholder="Type address here"></label>
+                placeholder="Type address here" required></label>
         </div>
         <div>
-            <input type="text" class="sch-name input-class" name="inputClass" placeholder="Type class here"></label>
+            <input type="text"  required class="sch-name input-class" name="inputClass" placeholder="Type class here"></label>
         </div>
-        <select name="session" id="session">
+        <select name="session" id="session" required>
             <option value="Academic Session: 2023/2024">Academic Session: 2023/2024</option>
             <option value="Academic Session: 2024/2025">Academic Session: 2024/2025</option>
             <option value="Academic Session: 2025/2026">Academic Session: 2025/2026</option>
@@ -55,7 +64,7 @@
             <option value="Academic Session: 2027/2028">Academic Session: 2027/2028</option>
         </select>
 
-        <button type="submit" href="transform-page.html" class="submit">Submit</button>
+        <button type="submit" href="selectSubjects.html" class="submit">Submit</button>
     </form>
     <!-- </div> -->
     <br>

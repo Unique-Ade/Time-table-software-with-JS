@@ -354,3 +354,8 @@ nav {
     color: #31473A;
     background-color: #b8d5ce;
 }
+
+.index-writeUp{
+    font-size: 60px;
+    max-width: 600px;
+}
