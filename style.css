@@ -189,14 +189,14 @@ a:hover {
 }
 
 .screen {
-    position: relative;
-    top: 70px;
-    background-color: rgb(29, 112, 145);
-    width: 1180px;
+    /* position: relative;
+    top: 70px; */
+    background-color: rgba(10, 10, 10, 0.596);
+    width: 50%;
     height: 165px;
     border-radius: 10px;
     padding: 10px;
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 
 .adjust {
@@ -378,9 +378,49 @@ nav {
     border: none;
 }
 
-.subjects{
+
+
+#High-school-section{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+#Junior-school-section{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.high-school-subjects{
     width: 50%;
+    display: none;
+}
+.Junior-school-subjects{
+    width: 50%;
+    
 }
 .subjects-wrap{
+     display: flex;
+     align-items: center;
+     padding: 50px;
+}
 
+.subj-section{
+    width: 18%;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: space-between;
+}
+
+.page-route{
+    display: flex;
+    justify-content: space-between;
+}
+
+.newpage{
+      background-color: #20948B;
+      border-radius: 8px;
+      padding: 10px 25px;
 }

@@ -1,10 +1,51 @@
+const sections = document.getElementsByClassName('subj-section');
+const high_School_Section = document.getElementById('High-school-section');
+const junior_School_Section = document.getElementById('Junior-school-section');
+
+
+
+for (let n = 0; n < sections.length; n++) {
+   
+sections[n].addEventListener('click', function () {
+   if (otherElement !== sections[n]) {
+      otherElement.backgroundColor == 'white';
+   }
+   this.style.backgroundColor = 'blue';
+})
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const addSubject = document.querySelector('.submit-2');
 const container = document.getElementById('container-2');
 const deleteSubject = document.querySelector('.delete');
 const selectSubject = document.getElementById('Nig-sch-subject');
 
 addSubject.addEventListener('click', function (e) {
-   
+
    // const newElement = document.createElement("div")
    // newElement.classList.add('add-subject');
    // newElement.innerHTML = `
