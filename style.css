@@ -20,12 +20,25 @@
     width: 350px;
     height: fit-content;
     border-radius: 20px;
-    margin: auto;
+    /* margin: auto; */
     background-color: rgb(227, 220, 220);
     padding: 30px;
     /* filter: drop-shadow(20px 20px 10px gray); */
     display: none;
     background: transparent;
+}
+
+.formText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.formText h1{
+    font-size: 60px;
+    width: 45%;
+    color: black;
 }
 
 .ctb-header {

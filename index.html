@@ -27,45 +27,51 @@
         </a>
     </nav>
     <div class="box"></div>
-    <div class="content" style="display: flex; align-items: center;"  >
-        <!-- <div>
-            <p class="index-writeUp" >Experience the game Changer</p>
-            <p class="index-writeUp" style="font-size: 40px;">Create school Time-tables with our easy to use free time-table maker</p>
+    <div class="formText">
+        <h1>Automate your School Timetable with this free tool</h1>
+         <img src="./images-Icons/Untitled design.png" width="200px">
+        <div class="content" style="display: flex; align-items: center;"  >
+            <!-- <div>
+                <p class="index-writeUp" >Experience the game Changer</p>
+                <p class="index-writeUp" style="font-size: 40px;">Create school Time-tables with our easy to use free time-table maker</p>
+            </div>
+             -->
+           
         </div>
-         -->
-       
+        
+        <form id="schoolInfo">
+            <!-- ctb - create time table header text -->
+            <h2 class="ctb-header">Create New Table</h2>
+            <!-- <select name="countries" id="countries" class="ctb-inputs" required>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Ghana">Ghana</option>
+                <option value="South Africa">South Africa</option>
+                <option value="America">America</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select> -->
+            <div>
+                <input type="text" required placeholder="School name" name="schoolName" class="sch-name schoolName"></label>
+            </div>
+            <div>
+                <input type="text" class="sch-name sch-address" name="schoolAddress"
+                    placeholder="Type address here" required></label>
+            </div>
+            <div>
+                <input type="text"  required class="sch-name input-class" name="inputClass" placeholder="Type class here"></label>
+            </div>
+            <select name="session" id="session" required>
+                <option value="Academic Session: 2023/2024">Academic Session: 2023/2024</option>
+                <option value="Academic Session: 2024/2025">Academic Session: 2024/2025</option>
+                <option value="Academic Session: 2025/2026">Academic Session: 2025/2026</option>
+                <option value="Academic Session: 2026/2027">Academic Session: 2026/2027</option>
+                <option value="Academic Session: 2027/2028">Academic Session: 2027/2028</option>
+            </select>
+    
+            <button type="submit" href="selectSubjects.html" class="submit">Submit</button>
+        </form>
     </div>
     
-    <form id="schoolInfo">
-        <!-- ctb - create time table header text -->
-        <h2 class="ctb-header">Create New Table</h2>
-        <!-- <select name="countries" id="countries" class="ctb-inputs" required>
-            <option value="Nigeria">Nigeria</option>
-            <option value="Ghana">Ghana</option>
-            <option value="South Africa">South Africa</option>
-            <option value="America">America</option>
-            <option value="United Kingdom">United Kingdom</option>
-        </select> -->
-        <div>
-            <input type="text" required placeholder="School name" name="schoolName" class="sch-name schoolName"></label>
-        </div>
-        <div>
-            <input type="text" class="sch-name sch-address" name="schoolAddress"
-                placeholder="Type address here" required></label>
-        </div>
-        <div>
-            <input type="text"  required class="sch-name input-class" name="inputClass" placeholder="Type class here"></label>
-        </div>
-        <select name="session" id="session" required>
-            <option value="Academic Session: 2023/2024">Academic Session: 2023/2024</option>
-            <option value="Academic Session: 2024/2025">Academic Session: 2024/2025</option>
-            <option value="Academic Session: 2025/2026">Academic Session: 2025/2026</option>
-            <option value="Academic Session: 2026/2027">Academic Session: 2026/2027</option>
-            <option value="Academic Session: 2027/2028">Academic Session: 2027/2028</option>
-        </select>
-
-        <button type="submit" href="selectSubjects.html" class="submit">Submit</button>
-    </form>
+   
     <!-- </div> -->
     <br>
     <br>
